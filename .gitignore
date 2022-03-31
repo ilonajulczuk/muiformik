@@ -1,0 +1,7 @@
+node_modules/
+dist/background.js
+dist/background.js.map
+dist/content.js
+dist/content.js.map
+dist/options.js
+dist/options.js.map
