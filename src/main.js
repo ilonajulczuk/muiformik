@@ -203,10 +203,10 @@ export function FormikCheckboxField({ name, label, formHelperText, ...props }) {
             {({ form, field }) => {
                 return <FormControl>
                     <FormControlLabel control={
-                        <Checkbox defaultChecked {...field}
+                        <Checkbox {...field}
                             {...props}
                             name={name}
-                            value={form.values[name]} />} label={label} />
+                            checked={form.values[name]} />} label={label} />
                     <FormHelperText sx={{
                         marginLeft: 0, marginRight: 0
                     }} error={(form.touched[name] && Boolean(form.errors[name]))}>{(form.touched[name] && form.errors[name]) || formHelperText
